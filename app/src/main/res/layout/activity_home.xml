@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_design"
+    tools:context="com.atik_faysal.memorygame.HomeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+        <Button
+            android:id="@+id/bPlay"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="139dp"
+            android:text="Play"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/bDefficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bPlay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="94dp"
+            android:layout_marginLeft="50dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:drawableRight="@drawable/down_icon"
+            android:layout_marginRight="50dp"
+            android:background="#039BE5"
+            android:text="Easy" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bDefficulty"
+            android:layout_alignStart="@+id/bDefficulty"
+            android:layout_below="@+id/bPlay"
+            android:layout_marginTop="58dp"
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:text="Difficulty" />
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bDefficulty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87dp"
+            android:textStyle="bold"
+            android:textColor="#C6FF00"
+            android:textSize="22dp"
+            android:hint="Score" />
+
+        <ImageView
+            android:id="@+id/imSound"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="11dp"
+            app:srcCompat="@drawable/sound_on" />
+
+
+    </RelativeLayout>
+</ScrollView>

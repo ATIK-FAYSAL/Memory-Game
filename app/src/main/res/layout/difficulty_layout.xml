@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000"
+        android:gravity="center"
+        android:text="Difficulty Level"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Easy"
+            android:onClick="selectDifficultyLevel"
+            android:textColor="#000"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Medium"
+            android:onClick="selectDifficultyLevel"
+            android:textColor="#000"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rHard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hard"
+            android:textColor="#000"
+            android:onClick="selectDifficultyLevel"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+</RelativeLayout>
